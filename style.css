@@ -1,0 +1,36 @@
+/*
+ Theme Name:   Wein und Co.
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Wein und Co. Theme based on 'Good ol wine'
+ Author:       Nils Weigel, Holger Klages
+ Author URI:   http://www.weinundco.com
+ Template:     goodoldwinewp
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         weinundco
+ Text Domain:  weinundco
+*/
+
+.products .tax-info {
+    display: none;
+}
+
+ul.products li.product a img {
+    width: auto !important;
+    margin: auto !important;
+    max-height: 250px;
+    min-height: 250px;
+}
+ul.products li.product a.add_to_cart_button {
+    font-size: 70% !important;
+}
+
+ul.products li.product a span.price span.amount {
+    position: static !important;
+    font-size: 17px;
+}
+
+.woocommerce-page ul.products li.product a h3 {
+    font-size: 70% !important;
+}

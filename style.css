@@ -25,7 +25,10 @@ ul.products li.product a img {
 ul.products li.product a.add_to_cart_button {
     font-size: 70% !important;
 }
-
+ul.products li.product a.add_to_cart_button:hover {
+    background-color: #00A650 !important;
+    color: white !important;
+}
 ul.products li.product a span.price span.amount {
     position: static !important;
     font-size: 17px;
@@ -33,4 +36,38 @@ ul.products li.product a span.price span.amount {
 
 .woocommerce-page ul.products li.product a h3 {
     font-size: 70% !important;
+}
+
+.woocommerce ul.products li.product a img, .woocommerce-page ul.products li.product a img {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: none 0s ease-in-out;
+    -moz-transition: none 0s ease-in-out;
+    transition: none 0s ease-in-out;
+    border-radius: 4px;
+}
+.woocommerce ul.products li.product a img:hover, .woocommerce-page ul.products li.product a img:hover {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    border-bottom-color: transparent;
+}
+.woocommerce ul.products li.product:hover, .woocommerce-page ul.products li.product:hover {
+    border-bottom-color: #00A650;
+}
+
+.woocommerce ul.products li.product .price del {
+    display: inline !important;
+}
+
+div.product_meta span.posted_in, div.product_meta span.tagged_as {
+    display: block;
 }
